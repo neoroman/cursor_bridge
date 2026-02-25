@@ -1,0 +1,8 @@
+# cursor_bridge dependencies
+# ImportError: cannot import name 'Undefined' from 'pydantic.fields' occurs with
+# Pydantic v2 + older FastAPI. Use FastAPI 0.100+ with Pydantic v2.
+# email-validator: required for Pydantic v2 EmailStr etc. (ImportError if missing)
+fastapi>=0.100.0
+pydantic>=2.0
+uvicorn[standard]>=0.22.0
+email-validator>=2.0
